@@ -1,0 +1,54 @@
+%logo {
+    color: $accent-color;
+    font-family: $logo-font;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+%center-flex {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin header-link($color) {
+    display: block;
+    padding: 32px 0px;
+  
+    color: $color;
+  
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+  
+    transition: $transition-values;
+}
+
+@mixin social-link($color) {
+    @extend %center-flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background-color: $color;
+
+    transition: $transition-values;
+}
+
+%icon {
+    width: 20px;
+    height: 20px;
+}
+
+%visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+    

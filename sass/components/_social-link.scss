@@ -1,0 +1,47 @@
+// Наша команда
+.team-networks {
+    padding: 0px 32px 24px 32px;
+    
+    .item:not(:last-child) {
+        margin-right: 10px;
+    }
+}
+
+.team-networks .social-link {
+    @include social-link($main-bg-color);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+
+        .icon {
+            fill: $main-bg-color;
+        }
+    }
+}
+
+.team-networks .social-link .icon {
+    @extend %icon;
+    fill: $icon-color;
+    
+    transition: $transition-values;
+}
+
+// Футер
+.footer-networks .item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-networks .social-link {
+    @include social-link($footer-link-color);
+
+    &:hover,
+    &:focus {
+        background-color: $accent-color;
+    }
+}
+
+.footer-networks .social-link .icon {
+    @extend %icon;
+    fill: $main-bg-color;
+}

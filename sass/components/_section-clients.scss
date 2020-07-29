@@ -1,0 +1,25 @@
+.clients .clients-link {
+    @extend %center-flex;
+    width: 170px;
+    height: 90px;
+    border: 1px solid $icon-color;
+    border-radius: 4px;
+  
+    transition: $transition-values;
+
+    &:hover,
+    &:focus {
+        border-color: $accent-color;
+    }
+
+    &:hover .icon,
+    &:focus .icon {
+        --color3: #2196f3;
+    }
+}
+  
+.clients-link .icon {
+    --color3: #afb1b8;
+  
+    transition: $transition-values;
+}

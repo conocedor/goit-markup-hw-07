@@ -1,0 +1,38 @@
+.features {
+    &-img {
+        @extend %center-flex;
+        margin-top: 0px;
+        margin-bottom: 30px;
+        border: none;
+        border-radius: 4px;
+        width: 270px;
+        height: 120px;
+    
+        background-color: $team-bg-color;
+    }
+
+    &-subtitle {
+        margin-top: 0px;
+        margin-bottom: 10px;
+      
+        font-size: 14px;
+        line-height: 1.14;
+        text-transform: uppercase;
+    }
+
+    &-text {
+        margin-top: 0px;
+        margin-bottom: 0px;
+      
+        color: $secondary-text-color;
+      
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+ 
+.features-img .icon {
+    width: 70px;
+    height: 70px;
+}

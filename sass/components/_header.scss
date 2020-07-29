@@ -1,0 +1,63 @@
+.header-flex {
+  display: flex;
+  align-items: center;
+}
+
+.site-nav {
+  .item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.site-nav .link {
+  @include header-link($primary-text-color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  &.current {
+    color: $accent-color;
+  }
+
+  &.current::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 4px;
+    width: 100%;
+    background-color: $accent-color;
+    border-radius: 2px;
+  }
+}
+
+.contacts {
+  margin-left: auto;
+}
+
+.contacts .link {
+  @include header-link($secondary-text-color);
+
+  &:hover,
+  &:focus {
+    color: $accent-color;
+  }
+
+  .icon {
+    margin-right: 10px;
+    fill: #757575;
+  
+    transition: $transition-values;
+  }
+
+  &:hover .icon,
+  &:focus .icon {
+    fill: $accent-color;
+  }
+}
+
+.link {
+  position: relative;
+}

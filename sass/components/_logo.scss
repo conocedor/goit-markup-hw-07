@@ -1,0 +1,18 @@
+.logo-header {
+    @extend %logo;
+    margin-right: 85px;
+
+    &-studio {
+        color: $logo-second-color;
+    }
+}
+
+.logo-footer {
+    @extend %logo;
+    display: block;
+    margin-bottom: 20px;
+
+    &-studio {
+        color: $main-bg-color;
+    }
+}

@@ -1,0 +1,88 @@
+.footer {
+    padding-top: 72px;
+    min-height: 252px;
+  
+    background-color: $footer-bg-color;
+}
+
+// -Блок 1- 
+.foot-element-1 {
+    margin-right: 69px;
+}
+  
+.foot-element-2 {
+    margin-right: 94px;
+}
+
+.address {
+    display: flex;
+    flex-direction: column;
+  
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+}
+  
+.adr {
+    margin-bottom: 9px;
+    color: $main-bg-color;
+}
+  
+.mail {
+    margin-bottom: 9px;
+    color: $footer-mail-color;
+  
+    transition: $transition-values;
+
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+}
+  
+.telephone {
+    color: $footer-telephone-color;
+  
+    transition: $transition-values;
+
+    &:hover, &:focus {
+        color: $accent-color;
+    }
+}
+
+// -Блок 2-  
+.social {
+    display: block;
+    margin-bottom: 20px;
+  
+    color: $main-bg-color;
+  
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+
+// -Блок 3-
+.button .icon {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: $main-bg-color;
+}
+
+.input-email {
+    margin-right: 12px;
+    padding: 15px 16px;
+  
+    width: 358px;
+    background-color: inherit;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    box-shadow: $main-shadow;
+    color: $main-bg-color;
+}
+  
+.mailing {
+    display: flex;
+}
